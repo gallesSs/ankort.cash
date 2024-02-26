@@ -53,6 +53,8 @@ body {
   flex-wrap: wrap;
   color: #fff;
   gap: 40px;
+  border-left: 1px solid #fff;
+  padding-left: 20px;
 }
 
 .nav-bar {
