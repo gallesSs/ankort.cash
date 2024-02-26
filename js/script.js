@@ -17,7 +17,7 @@ function updateCurrencyRates(data) {
         const currencyData = data.find(item => item.cc === currencyCode);
         if (currencyData) {
             const currencyRateDiv = document.createElement('div');
-            currencyRateDiv.innerHTML = `<strong>${currencyData.txt}</strong>: ${currencyData.rate.toFixed(4)} ${currencyData.cc}`;
+            currencyRateDiv.innerHTML = `${currencyData.cc} ${currencyData.rate.toFixed(4)}`;
             currencyRatesDiv.appendChild(currencyRateDiv);
         }
     });

@@ -1,0 +1,7 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-googlesheets" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M15.091 16.727h-4.544v-2.545h4.547v2.547l-0.003-0.001zM19.637 0v8h8l-8-8zM21.455 14.181h-4.547v2.547h4.547v-2.547zM21.455 18.545h-4.547v2.547h4.547v-2.547zM27.636 8.667v21.152c0 1.205-0.976 2.181-2.181 2.181h-18.909c-0.286 0-0.57-0.056-0.835-0.166s-0.505-0.27-0.708-0.473c-0.409-0.409-0.639-0.964-0.639-1.542v-27.637c0-1.205 0.976-2.181 2.181-2.181h12.424v8.667h8.667zM23.272 12.364h-14.545v10.545h14.547v-10.547l-0.001 0.001zM15.091 18.545h-4.544v2.547h4.547v-2.547h-0.003z"></path>
+</symbol>
+</defs>
+</svg>
