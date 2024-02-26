@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  border: none;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+/* HEADER */
+
+.header {
+}
