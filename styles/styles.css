@@ -29,7 +29,7 @@ body {
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .list-menu-item-link {
@@ -41,7 +41,7 @@ body {
 
 .list-menu {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   gap: 54px;
   flex-direction: row;
@@ -61,6 +61,83 @@ body {
 .nav-bar {
   display: flex;
   justify-content: center;
+  gap: 300px;
   align-items: center;
-  gap: 115px;
+}
+
+/* TABLE */
+
+.table-wrapper {
+  border: 5px solid #777;
+  border-radius: 20px;
+  padding: 12px 0 38px;
+}
+
+.table-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.table-row-text {
+  color: #000;
+  font-size: 26px;
+  font-weight: 500;
+}
+
+#price {
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 179px;
+  height: 47px;
+  padding: 0 11px;
+}
+
+.price,
+.upperprice {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+  padding: 10px 16px;
+  border-right: 1px solid #000;
+}
+
+.table-list-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.table-row img {
+  position: absolute;
+  top: 25%;
+  right: 11px;
+}
+
+.table-row {
+  position: relative;
+}
+
+/* Стилі для зображення (не обов'язково) */
+.icon {
+  cursor: pointer; /* Зміна курсору при наведенні */
+}
+
+/* Стилі для активної іконки */
+.icon.active {
+  content: url("/img/uah.png"); /* Встановлюємо другу іконку */
+}
+
+#upperprice {
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 132px;
+  height: 47px;
+  padding: 0 11px;
 }
