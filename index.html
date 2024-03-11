@@ -109,20 +109,59 @@
                     </ul>
                 </li>
                 <li class="table-list-item">
-                    <span class="table-row-text">На лапу</span>
+                    <div class="table-row-wrapper">
+                        <span class="table-row-text">На лапу</span>
+                        <svg width="23" height="23" class="icon-paw">
+                            <use href="./img/symbol-defs.svg#icon-paw"></use>
+                        </svg>
+                    </div>
 
                     <ul class="table-column lapa">
-                        <li class="table-row"></li>
-                        <li class="table-row"></li>
-                        <li class="table-row"></li>
-                        <li class="table-row"></li>
-                        <li class="table-row"></li>
-                        <li class="table-row"></li>
-                        <li class="table-row"></li>
+                        <li class="table-row">
+                            <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
+                            <input type="text" name="price" id="upperprice">
+                        </li>
+                        <li class="table-row">
+                            <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
+                            <input type="text" name="price" id="upperprice">
+                        </li>
+                        <li class="table-row">
+                            <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
+                            <input type="text" name="price" id="upperprice">
+                        </li>
+                        <li class="table-row">
+                            <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
+                            <input type="text" name="price" id="upperprice">
+                        </li>
+                        <li class="table-row">
+                            <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
+                            <input type="text" name="price" id="upperprice">
+                        </li>
+                        <li class="table-row">
+                            <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
+                            <input type="text" name="price" id="upperprice">
+                        </li>
+                        <li class="table-row">
+                            <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
+                            <input type="text" name="price" id="upperprice">
+                        </li>
+                        <li class="table-row">
+                            <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
+                            <input type="text" name="price" id="upperprice">
+                        </li>
                     </ul>
                 </li>
                 <li class="table-list-item">
-                    <span class="table-row-text">Авто</span>
+                    <div class="auto-wrapper">
+                        <span class="table-row-text">Авто</span>
+                        <div class="container">
+                            <div class="road" id="road">
+                                <div class="car" id="car" onclick="startAnimation()"></div>
+                            </div>
+                            <div class="input-column" id="inputColumn"></div>
+                        </div>
+
+                    </div>
 
                     <ul class="table-column delivery">
                         <li class="table-row"></li>
