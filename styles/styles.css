@@ -97,7 +97,7 @@ body {
 
 .price,
 .upperprice,
-.lapa {
+.lapa, .taxes {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,17 +157,14 @@ body {
 }
 
 .road {
-  width: 200px; /* Ширина дороги */
-  height: 500px; /* Высота дороги */
-  background-color: #f2f2f2; /* Цвет дороги */
+  height: 618.8px;
+  width: 188.4px;
+  background-color: #fff; /* Цвет дороги */
   position: relative;
   overflow: hidden;
 }
 
 .car {
-  width: 50px; /* Ширина машины */
-  height: 30px; /* Высота машины */
-  background-color: red; /* Цвет машины */
   position: absolute;
   top: 0; /* Начальное положение машины */
   left: 50%; /* Положение машины по горизонтали */
@@ -181,7 +178,7 @@ body {
   z-index: -1;
   width: 200px; /* Ширина колонки */
   height: 500px; /* Высота колонки */
-  background-color: #f2f2f2; /* Цвет фона колонки */
+  background-color: #fff; /* Цвет фона колонки */
   position: absolute; /* Абсолютное позиционирование */
   top: 0; /* Располагаем колонку вверху контейнера */
   left: 0; /* Располагаем колонку в левом углу контейнера */
@@ -195,4 +192,8 @@ body {
 
 .car.clicked {
   top: calc(100% - 30px); /* Конечное положение машины */
+}
+
+.none {
+  display: none;
 }

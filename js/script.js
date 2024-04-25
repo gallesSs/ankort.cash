@@ -29,30 +29,38 @@ document.addEventListener('DOMContentLoaded', fetchCurrencyRates);
 // Обновляем данные каждый день (86400000 миллисекунд в сутках)
 setInterval(fetchCurrencyRates, 86400000);
 
-function startAnimation() {
-  const car = document.getElementById('car');
-  const road = document.getElementById('road');
-  const inputColumn = document.getElementById('inputColumn');
+const car = document.querySelector('.car');
+const road = document.querySelector('.road');
 
-  car.classList.add('clicked'); // Запускаем анимацию машины
-  
-  // После окончания анимации машины, скрываем дорогу и показываем колонку с инпутами
+
+const containerWidth = road.offsetWidth;
+const carWidth = car.offsetWidth;
+
+let currentPosition = 0;
+let speed = 2; // Скорость движения объекта, можно изменить на другое значение
+
+function moveCar() {
+  currentPosition += speed;
+  if (currentPosition > containerWidth - carWidth) {
+    currentPosition = 0;
+  }
+  car.style.left = currentPosition + 'px';
+}
+
+car.addEventListener('click', function() {
+  car.classList.toggle('clicked'); // Добавляем или убираем класс 'clicked' при клике
   setTimeout(() => {
     road.style.opacity = '0';
+    road.style.width = "0";
+    road.style.height = "0";
     inputColumn.style.opacity = '1';
-    createInputs(); // Создаем инпуты
-  }, 1000); // Длительность анимации машины
+    toggleClass();
+    }, 1000);
+});
+
+function toggleClass() {
+  const taxes = document.querySelector('.taxes');
+  setTimeout(() => {
+    taxes.classList.toggle('none');
+  }, 1000);
 }
-
-// Функция для создания инпутов
-function createInputs() {
-  const inputColumn = document.getElementById('inputColumn');
-
-  for (let i = 0; i < 5; i++) { // Создаем 5 инпутов
-    const input = document.createElement('input');
-    input.type = 'text';
-    input.placeholder = 'Введите данные';
-    inputColumn.appendChild(input);
-  }
-}
-

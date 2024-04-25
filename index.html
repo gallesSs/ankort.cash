@@ -39,35 +39,35 @@
                     <ul class="table-column price">
                         <li class="table-row">
                             <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
-                            <input type="text" name="price" id="price">
+                            <input type="text" name="price" id="price" class="input-style">
                         </li>
                         <li class="table-row">
                             <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
-                            <input type="text" name="price" id="price">
+                            <input type="text" name="price" id="price" class="input-style">
                         </li>
                         <li class="table-row">
                             <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
-                            <input type="text" name="price" id="price">
+                            <input type="text" name="price" id="price" class="input-style">
                         </li>
                         <li class="table-row">
                             <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
-                            <input type="text" name="price" id="price">
+                            <input type="text" name="price" id="price" class="input-style">
                         </li>
                         <li class="table-row">
                             <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
-                            <input type="text" name="price" id="price">
+                            <input type="text" name="price" id="price" class="input-style">
                         </li>
                         <li class="table-row">
                             <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
-                            <input type="text" name="price" id="price">
+                            <input type="text" name="price" id="price" class="input-style">
                         </li>
                         <li class="table-row">
                             <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
-                            <input type="text" name="price" id="price">
+                            <input type="text" name="price" id="price" class="input-style">
                         </li>
                         <li class="table-row">
                             <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
-                            <input type="text" name="price" id="price">
+                            <input type="text" name="price" id="price" class="input-style">
                         </li>
                     </ul>
                 </li>
@@ -152,31 +152,35 @@
                     </ul>
                 </li>
                 <li class="table-list-item">
-                    <div class="auto-wrapper">
-                        <span class="table-row-text">Авто</span>
-                        <div class="container">
-                            <div class="road" id="road">
-                                <div class="car" id="car" onclick="startAnimation()"></div>
-                            </div>
-                            <div class="input-column" id="inputColumn"></div>
-                        </div>
-
-                    </div>
-
-                    <ul class="table-column delivery">
-                        <li class="table-row"></li>
-                        <li class="table-row"></li>
-                        <li class="table-row"></li>
-                        <li class="table-row"></li>
-                        <li class="table-row"></li>
-                        <li class="table-row"></li>
-                        <li class="table-row"></li>
+                    <div class="table-row-wrapper"><span class="table-row-text">Auto</span></div>
+                    <ul class="table-column taxes none">
+                        <li class="table-row" id="tax">                            <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
+                            <input type="text" name="price" id="upperprice"></li>
+                        <li class="table-row" id="tax">                            <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
+                            <input type="text" name="price" id="upperprice"></li>
+                        <li class="table-row" id="tax">                            <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
+                            <input type="text" name="price" id="upperprice"></li>
+                        <li class="table-row" id="tax">                            <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
+                            <input type="text" name="price" id="upperprice"></li>
+                        <li class="table-row" id="tax">                            <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
+                            <input type="text" name="price" id="upperprice"></li>
+                        <li class="table-row" id="tax">                            <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
+                            <input type="text" name="price" id="upperprice"></li>
+                        <li class="table-row" id="tax">                            <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
+                            <input type="text" name="price" id="upperprice"></li>
+                        <li class="table-row" id="tax">                            <img src="./img/euro.png" alt="Перша іконка" class="icon" onclick="changeAllIcons()">
+                            <input type="text" name="price" id="upperprice"></li>
                     </ul>
+                    <div class="road">
+                        <div class="car" onclick="toggleClass()"><svg>
+                            <use href="./img/symbol-defs.svg#icon-car"></use>
+                        </svg></div>
+                    </div>
                 </li>
                 <li class="table-list-item">
                     <span class="table-row-text">Цена с НДС</span>
 
-                    <ul class="table-column taxes">
+                    <ul class="table-column">
                         <li class="table-row"></li>
                         <li class="table-row"></li>
                         <li class="table-row"></li>
